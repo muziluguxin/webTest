@@ -1,14 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>实验</title>
+    <meta charset="utf-8">
+    <title>博雅互动</title>
+    <style>
+        *{margin:0;padding:0;}
+
+    </style>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="ni">
-    <div>
-        <input type="text" placeholder="nihao">
+<div style="height: 100px;" >
+    <div class="col-xs-2">
+        <ul class="nav nav-tab vertical-tab" role="tablist" id="vtab">
+            <li role="presentation" class="active">
+                <a href="#tab1" aria-controls="home" role="tab"
+                   data-toggle="tab">本地</a>
+            </li>
+            <li role="presentation">
+                <a href="#tab2" aria-controls="inbox" role="tab"
+                   data-toggle="tab">系统</a>
+            </li>
+            <li role="presentation">
+                <a href="#tab3" aria-controls="outbox" role="tab"
+                   data-toggle="tab">网络</a>
+            </li>
+            <li role="presentation">
+                <a href="#tab4" aria-controls="inbox1" role="tab"
+                   data-toggle="tab">视音频</a>
+            </li>
+            <li role="presentation">
+                <a href="#tab5" aria-controls="outbox1" role="tab"
+                   data-toggle="tab">图像</a>
+            </li>
+            <li role="presentation">
+                <a href="#tab6" aria-controls="outbox1" role="tab"
+                   data-toggle="tab">事件</a>
+            </li>
+            <li role="presentation">
+                <a href="#tab7" aria-controls="outbox1" role="tab"
+                   data-toggle="tab">存储</a>
+            </li>
+        </ul>
     </div>
+
+    <div class="tab-content vertical-tab-content col-xs-10 " style="border:1px solid red;">
+        <div role="tabpanel" class="tab-pane active" id="tab1">.本地.</div>
+        <div role="tabpanel" class="tab-pane" id="tab2">.系统..</div>
+        <div role="tabpanel" class="tab-pane" id="tab3">..网络.</div>
+        <div role="tabpanel" class="tab-pane" id="tab4">.视音频..</div>
+        <div role="tabpanel" class="tab-pane" id="tab5">..图像.</div>
+        <div role="tabpanel" class="tab-pane" id="tab6">..事件.</div>
+        <div role="tabpanel" class="tab-pane" id="tab7">..存储.</div>
+    </div>
+
 </div>
+
 </body>
 </html>
